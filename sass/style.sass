@@ -1,0 +1,118 @@
+@import vars
+*
+	font-family: 'Istok Web', sans-serif
+	box-sizing: border-box
+
+body
+	background-color: $bg-color
+
+.logo
+	font-weight: 700
+	margin: 20px 0
+	color: white
+	text-decoration: none
+
+p
+	font-size: 1.1em
+
+.container
+	width: $page-width
+	padding: 0 25px
+	margin: 0 auto
+
+.header
+	display: block
+	width: 100%
+	background-color: $dark
+	&-top
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-menu
+		width: 100%
+		background-color: $dark-orange
+
+.social__icon
+	margin: 0 10px
+	transition: all 0.2s ease-out
+	&:hover
+		transition: all 0.2s ease-in
+		transform: scale(1.5) rotate(15deg) translate(0, 5px)
+
+.social__link
+	text-decoration: none
+
+nav ul 
+	display: flex
+	justify-content: center
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+		list-style: none
+		padding: 10px 0
+		border-bottom: 1px solid $dark-orange
+		transition: all 1s ease-out
+		&:hover
+			background-color: white
+			border-bottom: 1px solid $dark-orange
+		&:hover a
+			color: $dark-orange
+			transition: all 0.2s ease-in
+		a
+			font-weight: 700
+			font-size: 1.2em
+			color: white
+			text-transform: uppercase
+			text-decoration: none
+			padding: 5px 20px
+
+.last-news
+	position: relative
+
+.medium 
+	width: 615px
+	&__img
+		overflow: hidden
+		background-size: cover
+		img
+			max-width: 100%
+			height: auto
+
+.trending-news
+	background-color: $dark
+	color: white
+	&__header
+		color: lighten($dark-orange, 30%)
+		margin: 10px
+	&__text
+		font-weight: 700
+		line-height: 1.3
+		color: white
+		margin: 0 10px
+		padding-bottom: 10px
+
+.text-links
+	overflow: hidden
+	position: absolute
+	left: 655px
+	width: 300px
+	ul
+		margin: 0
+		padding: 0
+		li
+			display: block
+			list-style: none
+			padding: 10px
+			border-bottom: 1px solid $dark-orange
+			transition: all 1s ease-out
+			&:hover
+				background-color: white
+				border-bottom: 1px solid $dark-orange
+			&:hover a
+				color: #f26722
+				transition: all 0.2s ease-in
+			a
+				+font-prop(1.2em, 700, none)
+				color: $dark
+				text-decoration: none
